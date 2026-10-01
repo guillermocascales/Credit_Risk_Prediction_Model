@@ -46,3 +46,7 @@ In retail banking, the cost of a False Negative (losing the entire principal on 
 By lowering the decision threshold from the default 0.50 down to 0.25, the model captured 82% of all potential non-performing loans while keeping unnecessary rejections low. This framework provides a transparent, scalable, and mathematically tool for automated loan underwriting, risk-based pricing, and capital allocation.
 
 ## Limitations
+The dataset relies entirely on static borrower snapshots (income, loan amount, credit history). It doesn't include real-time economic indicators like inflation rates, interest rate changes, or unemployment trends, which heavily influence real-world default rates.
+
+Furthermore, features like _person_home_ownership_RENT_ or _person_age_ can act as proxies for socioeconomic or age-related disparities. In strictly regulated credit markets, models must undergo legal bias/fairness audits to ensure they do not unintentionally discriminate against protected classes.
+
